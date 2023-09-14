@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!--Title of the page-->
+    <title> Locked </title>
+
+    <!--Include google fonts for header and body-->
+    <link href="https://fonts.googleapis.com/css?family=Avenir" rel = 'stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- include styles.css as stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--include script.js-->
+    <script src="script.js" ></script>
+</head>
+
+<body>
+
+
+    <!-- Sticky header -->
+<header class="header-outer">
+	<div class="header-inner responsive-wrapper">
+		<h1>JACQUELINE HENNECKE</h1>
+		
+	</div>
+</header>
+
+
+    
+
+    <!--video goes here-->
+
+      <video class="videot" id="videot" height="100%" controls autoplay muted>
+        <source src="img/30MFF.mp4" type="video/mp4">
+        <object data="img/30MFF.mp4" height="1080">
+            <param name="wmode" value="transparent">
+            <param name="autoplay" value="false" >
+            <param name="loop" value="false" >
+            Your browser does not support this video
+        </object>
+      </video>
+
+ <!-- Description-->
+ 
+    <div class="columns">
+        
+        <div class="column big">
+        <h2>Ever been locked out? On a 40 degree day in Abu Dhabi, the feeling is both frustrating and relatable. 
+            This film explores how a day can completely flip when a small mistake is made. Enjoy clips of a beautiful 
+            campus with a gripping plot. This film will have you on your feet and gripping your room key. 
+        </h2>
+         </div>
+         <div class="column small">
+            <h1>LOCKED</h1>
+            </div>
+    </div>
+
+<!-- create buttons for internal navigation-->>
+
+
+
+
+      <div class="columns">
+        <div class="fourcolumn first">
+            <button class='glowing-btn' onClick='window.location="#designprocess"'><span class='glowing-txt'>DESIGN<br>PROCESS</span></button>
+        </div>
+        
+        <div class="fourcolumn">
+            <button class='glowing-btn' onClick='window.location="#reviews"'><span class='glowing-txt'>OUR<BR>REVIEWS</span></button>
+        </div>
+        
+        <div class="fourcolumn">
+            <button class='glowing-btn' onClick='window.location="#bts"'><span class='glowing-txt'>BEHIND<br>SCENES</span></button>
+        </div>
+        
+        <div class="fourcolumn">
+            <button class='glowing-btn' onClick='window.location="#actors"'><span class='glowing-txt'>ACTOR<br>BIOS</span></button>
+        </div>
+      </div>
+
+
+  <div class="sticky">
+    <button class="top-glowing-btn" onClick='window.location="#videot"'><img src="img/back_to_top.png" alt="back to top"></button> 
+  </div>
+
+<!-- Design Process-->
+<hr id="designprocess">
+<div class="columns">
+    
+    <div class="column small">
+    <h1>DESIGN PROCESS</h1>
+    <img src="img/swatch.png" alt="Color Swatch">
+    </div>
+
+    <div class="column big">
+        <h2>Though I'm not a great filmmaker, I grew very fond of the process of editing the video and 
+            designing a website to accompany the film. I'm a big fan of dark backgrounds, which make the 
+            film pop when the website is loaded. However, I wanted the website to reflect some of the 
+            lighter colors in the film: namely the iconic blue Abu Dhabi skies. Blending the softness 
+            of the film with the dark background was actually fairly difficult. I'm not sure I ever nailed it,
+            but searching color schemes and CSS profiles taught me a lot about design. At the end, I decided 
+            to stick to a very playful and energetic color palette. I've included neon signs and other effects
+            that make these elements pop. 
+        </h2> 
+    </div>
+    
+</div>
+
+
+<!-- Reviews-->
+<hr id="reviews">
+
+<h1 class="title">REVIEWS</h1>
+<div class="columns">
+    <div class="fourcolumn first">
+        <img class="img-small" src="img/profile.png" alt="Reviewer">
+        <p>"Woah! Eye opening and relatable. <br> Finally a film for me."</p>
+    </div>
+    
+    <div class="fourcolumn">
+        <img class="img-small" src="img/profile.png" alt="Reviewer">
+        <p>"I loved the choice of music and <br> the cast. Heartwarming."</p>
+    </div>
+    
+    <div class="fourcolumn">
+        <img class="img-small" src="img/profile.png" alt="Reviewer">
+        <p>"The story gripped me. Looking forward <br> to what she makes next."</p>
+    </div>
+    
+    <div class="fourcolumn">
+        <img class="img-small" src="img/profile.png" alt="Reviewer">
+        <p>"Kind of looks like it was shot <br> on an iPhone."</p>
+    </div>
+  </div>
+      
+<!-- Behind the Scenes-->
+<hr id="bts">
+<div class="columns">
+    
+    
+
+    <div class="column big">
+        <h2>They say filming is a grueling process, and this was no exception.
+            This ninety second film was edited down from an astonishing five minutes of content
+            shot over 20 whole minutes. Editing through all five minutes took nearly an hour,
+            shattering records for the most heavily and meticulous editing process in the history
+            of film. Several clips didn't even make it into the final product.
+            The site itself took several iterations. Following many wireframe drafts, I was eventually 
+            able to find a design that you see here: simple, clean, and clear. Working with CSS and HTML was
+            clean and simple, but Javascript took a while to work with. 
+        </h2> 
+    </div>
+    <div class="column small">
+        <h1>BEHIND THE SCENES</h1>
+        <img src="img/bts.png" alt="Still from Video">
+    </div>
+    
+</div>    
+
+<div id="app"></div>
+
+
+<!-- Actors-->
+<hr id="actors">
+
+<h1 class="title">ACTOR BIOS</h1>
+<div class="columns">
+    <div class="fourcolumn first"></div>
+    
+    <div class="fourcolumn">
+        <img class="img-small" src="img/Jackie.png" alt="Actor">
+        <h2>Jacqueline Hennecke</h2>
+        <p>A student at NYUAD studying Social Research.</p>
+    </div>
+    
+    <div class="fourcolumn">
+        <img class="img-small" src="img/OJ.png" alt="Actor">
+        <h2>Ojasbi Badal</h2>
+        <p>A student at NYUAD studying Physics.</p>
+    </div>
+    
+    <div class="fourcolumn"></div>
+  </div>
+
+<footer>
+    <div class="footer">
+    <div class="row">
+        Website Designed By: Jacqueline Hennecke
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>
+

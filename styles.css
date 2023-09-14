@@ -1,0 +1,720 @@
+
+body {
+    background-color: black;
+}
+
+/*styling the separators */
+hr {
+  clear: left;
+  width:60%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  
+
+}
+
+h1{
+    
+    color: white;
+    font-family: "Avenir";
+    letter-spacing: 8px;
+    line-height: 1.8;
+
+}
+
+h1.title{
+  text-align: center;    
+
+}
+
+h2{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+
+}
+p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+  }
+
+
+div.sticky {
+  position: -webkit-sticky;
+  width: 8%;
+  position: sticky;
+  top: 0;
+  padding: 100px;
+  float: right;
+}
+
+
+:root {
+	--header-outer-height: 110px;
+	--header-inner-height: 70px;
+	--header-height-difference: calc(var(--header-outer-height) - var(--header-inner-height));
+  --base-duration: 600ms;
+  --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
+	--header-bg: #fff;
+  --bright-color: #5fdbe6;
+}
+
+
+.responsive-wrapper {
+	width: 90%;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Sticky header */
+
+/* contains two elements: an outer and inner container. 
+The outer container is taller than the inner, */
+
+
+/* outer container has a negative top value equal to the height difference  between the containers. 
+This causes the outer container to stay in place while the inner container stays with the viewport.*/
+.header-outer {
+	/* Make it stick */
+	height: var(--header-outer-height);
+	position: sticky;
+	top: calc(
+		var(--header-height-difference) * -1
+	); /* Multiply by -1 to get a negative value */
+	display: flex;
+	align-items: center;
+
+	/* Other */
+	background-color: black;
+
+}
+
+/* by using "position: sticky" on both the outer and inner container, the outer  will 
+stick to the body, and the inner container sticks to the outer .*/
+
+/*the inner must be vertically centered */
+.header-inner {
+	/* Make it stick */
+	height: var(--header-inner-height);
+	position: sticky;
+	top: 0;
+
+	/* Other */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+/* make video full height and width */
+.videot {
+    width: 100%    !important;
+    height: 100%   !important;
+ }
+
+   
+ /* Create two unequal columns */
+
+
+.columns {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 400px;
+    text-align: left;
+}
+ .column {
+    float: left;
+    margin-bottom: 100px;
+  }
+  /* smaller column */
+  .column.small {
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 40%;
+  }
+  /* bigger column */
+  .column.big {
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 50%;
+    
+  }
+
+
+
+
+
+
+/* Create four equal columns that floats next to each other, pattern for buttons, reviews and actor bios */
+.fourcolumn {
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+.fourcolumn.first {
+    clear: left;
+    
+  }
+  
+
+
+/* create buttons */
+
+  .glowing-btn {
+
+    /*playing around with styles to match the other elements*/
+    color: var(--bright-color);
+    cursor: pointer;
+    padding: 1em 1em;
+    border: 0.15em solid var(--bright-color);
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    font-family: "Avenir", sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 1em;
+    line-height: 1.8;
+  
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
+      0px 0px 0.5em 0px var(--bright-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
+      0px 0px 0.5em 0px var(--bright-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
+      0px 0px 0.5em 0px var(--bright-color); 
+    
+  }
+  
+  .glowing-txt {
+    float: left;
+    margin-right: -.1em;
+    margin-left: .8em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--bright-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--bright-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--bright-color);
+    
+  }
+  
+
+  
+  .glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--bright-color
+    );
+    pointer-events: none;
+  }
+  
+  .glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--bright-color);
+    transition: opacity 100ms linear;
+  }
+  
+  .glowing-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+  }
+  
+  .glowing-btn:hover .glowing-txt {
+    animation: none;
+  }
+  
+  .glowing-btn:hover {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:after {
+    opacity: 1;
+  }
+  
+
+
+
+
+
+
+  .top-glowing-btn {
+
+    color: var(--bright-color);
+    cursor: pointer;
+    padding: 1em 1em;
+    border: 0.15em solid var(--bright-color);
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    font-family: "Avenir", sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 1em;
+    line-height: 1.8;
+  
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
+      0px 0px 0.5em 0px var(--bright-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
+      0px 0px 0.5em 0px var(--bright-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
+      0px 0px 0.5em 0px var(--bright-color); 
+    
+  }
+  
+  
+  
+  .top-glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  
+  .top-glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--bright-color);
+  }
+  
+  .top-glowing-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+  }
+  
+  .top-glowing-btn:hover .glowing-txt {
+    animation: none;
+  }
+  
+  .top-glowing-btn:hover {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .top-glowing-btn:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+  }
+  
+  .top-glowing-btn:hover:after {
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* making a class for small images like bios */
+  .img-small {
+    width: 50%;
+
+  }
+  
+
+
+
+
+  /* footer design */
+
+.footer{
+    clear: left;
+    background:#000;
+    padding:30px 0px;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color: var(--bright-color);
+    font-family: "Avenir";
+    letter-spacing: 8px;
+    line-height: 1.8;
+
+    font-size:1.5em;
+    }
+    
+
+
+/* Responsive layout codes here so you can see how it plays on different devices */
+
+
+    @media only screen and (max-width: 600px) {
+        .glowing-btn{
+          font-size: 1em;
+        }
+        .footer{
+            text-align:left;
+            padding:5%;
+            }
+      }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.small, .column.big {
+      width: 100%;
+      
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* slideshow */
+
+  
+
+  
+  #app {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  
+  .visuallyhidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .icon {
+    fill: var(--bright-color);
+    width: 100%;
+  }
+  
+  .slider__controls {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: calc(100% + 1rem);
+    width: 100%;
+  }
+  .slider__controls .btn {
+    --size: 3rem;
+    align-items: center;
+    background-color: transparent;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    display: flex;
+    height: var(--size);
+    padding: 0;
+    width: var(--size);
+  }
+  .slider__controls .btn:focus {
+    border-color: var(--bright-color);
+    outline: none;
+  }
+  .slider__controls .btn--previous > * {
+    transform: rotate(180deg);
+  }
+  
+  .slider {
+    --slide-size: 70vmin;
+    --slide-margin: 4vmin;
+    height: var(--slide-size);
+    margin: 0 auto;
+    position: relative;
+    width: var(--slide-size);
+  }
+  
+  .slider__wrapper {
+    display: flex;
+    margin: 0 calc(var(--slide-margin) * -1);
+    position: absolute;
+    transition: transform var(--base-duration) cubic-bezier(0.25, 1, 0.35, 1);
+  }
+  
+  .slide {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: var(--slide-size);
+    justify-content: center;
+    margin: 0 var(--slide-margin);
+    opacity: 0.25;
+    position: relative;
+    text-align: center;
+    transition: opacity calc(var(--base-duration) / 2) var(--base-ease), transform calc(var(--base-duration) / 2) var(--base-ease);
+    width: var(--slide-size);
+    z-index: 1;
+  }
+  .slide--previous:hover, .slide--next:hover {
+    opacity: 0.5;
+  }
+  .slide--previous {
+    cursor: w-resize;
+  }
+  .slide--previous:hover {
+    transform: translateX(2%);
+  }
+  .slide--next {
+    cursor: e-resize;
+  }
+  .slide--next:hover {
+    transform: translateX(-2%);
+  }
+  
+  .slide--current {
+    --x: 0;
+    --y: 0;
+    --d: 50;
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-user-select: auto;
+       -moz-user-select: auto;
+        -ms-user-select: auto;
+            user-select: auto;
+  }
+  @media (hover: hover) {
+    .slide--current:hover .slide__image-wrapper {
+      transform: scale(1.025) translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
+    }
+  }
+  
+  .slide__image-wrapper {
+    background-color: var(--bright-color);
+    border-radius: 1%;
+    height: 100%;
+    left: 0%;
+    overflow: hidden;
+    position: absolute;
+    top: 0%;
+    transition: transform calc(var(--base-duration) / 4) var(--base-ease);
+    width: 100%;
+  }
+  
+  .slide__image {
+    --d: 20;
+    height: 110%;
+    left: -5%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: -5%;
+    transition: opacity var(--base-duration) var(--base-ease), transform var(--base-duration) var(--base-ease);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    width: 110%;
+  }
+  @media (hover: hover) {
+    .slide--current .slide__image {
+      transform: translate(calc(var(--x) / var(--d) * 1px), calc(var(--y) / var(--d) * 1px));
+    }
+  }
+  
+  .slide__headline {
+    font-size: 8vmin;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .slide__content {
+    --d: 60;
+    opacity: 0;
+    padding: 4vmin;
+    position: relative;
+    transition: transform var(--base-duration) var(--base-ease);
+    visibility: hidden;
+  }
+  .slide--current .slide__content {
+    -webkit-animation: fade-in calc(var(--base-duration) / 2) var(--base-ease) forwards;
+            animation: fade-in calc(var(--base-duration) / 2) var(--base-ease) forwards;
+    visibility: visible;
+  }
+  @media (hover: hover) {
+    .slide--current .slide__content {
+      transform: translate(calc(var(--x) / var(--d) * -1px), calc(var(--y) / var(--d) * -1px));
+    }
+  }
+  .slide__content > * + * {
+    margin-top: 2rem;
+  }
+  
+  @-webkit-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
