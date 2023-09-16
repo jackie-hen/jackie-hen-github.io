@@ -14,7 +14,7 @@ for (var i = 1; i <= 10; i++) {
   
 
 }
-thumb.src = "images/image" + i + ".jpg";
+thumb.src = "img/image" + i + ".jpg";
 thumb.alt = "Image " + i;
 thumb.classList.add("thumb");
 imageThumbs.appendChild(thumb);
