@@ -283,6 +283,7 @@ stick to the body, and the inner container sticks to the outer .*/
     font-weight: 900;
     letter-spacing: 1em;
     line-height: 1.8;
+	  background: url("img/back_to_top.png") no-repeat;
   
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
       0px 0px 0.5em 0px var(--bright-color);
@@ -322,6 +323,7 @@ stick to the body, and the inner container sticks to the outer .*/
     color: rgba(0, 0, 0, 0.8);
     text-shadow: none;
     animation: none;
+	  background: url("img/back_to_top_after.png") no-repeat;
   }
   
   .top-glowing-btn:hover .glowing-txt {
