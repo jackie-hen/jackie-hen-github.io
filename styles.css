@@ -443,7 +443,7 @@ background: url("img/back_to_top_after.png") no-repeat;
 
 
 #image-gallery { 
-  width: 600px; 
+  width: 500px; 
   margin: 0 auto;
 }
 
@@ -455,8 +455,8 @@ background: url("img/back_to_top_after.png") no-repeat;
 }
 
 .thumb { 
-  width: 80px; 
-  height: 80px; 
+  width: 70px; 
+  height: 70px; 
   object-fit: cover; 
   margin-right: 10px; 
   cursor: pointer;
