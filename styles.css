@@ -420,23 +420,6 @@ background: url("img/back_to_top_after.png") no-repeat;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* create image gallery image*/
 
 
@@ -462,13 +445,13 @@ background: url("img/back_to_top_after.png") no-repeat;
 }
 
 
-
+/* a style hover effect for the borders of images */
 .border img {
 transition: .5s ease;
 }
 
 .border img:hover{
-box-shadow: 0 0 0 10px #5fdbe6;
+box-shadow: 0 0 0 6px #5fdbe6;
 transition: .5s ease;
 }
 
