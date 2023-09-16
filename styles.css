@@ -277,11 +277,7 @@ stick to the body, and the inner container sticks to the outer .*/
     border: 0.15em solid var(--bright-color);
     border-radius: 0.45em;
     perspective: 2em;
-    font-family: "Avenir", sans-serif;
-    font-size: 1em;
-    font-weight: 900;
-    letter-spacing: 1em;
-    line-height: 1.8;
+    
 background: url("img/back_to_top.png") no-repeat;
   
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
@@ -365,6 +361,8 @@ background: url("img/back_to_top_after.png") no-repeat;
   /* making a class for small images like bios */
   .img-small {
     width: 50%;
+	height: 50%;
+
 
   }
   
