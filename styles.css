@@ -319,9 +319,10 @@ background: url("img/back_to_top.png") no-repeat;
   }
   
   .top-glowing-btn:hover {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0);
     text-shadow: none;
     animation: none;
+	opacity: 1;
 background: url("img/back_to_top_after.png") no-repeat;
   }
   
@@ -329,10 +330,8 @@ background: url("img/back_to_top_after.png") no-repeat;
     animation: none;
   }
   
-  .top-glowing-btn:hover {
-    animation: none;
-    text-shadow: none;
-    opacity: 1;
+
+    
   }
   
   .top-glowing-btn:hover:before {
