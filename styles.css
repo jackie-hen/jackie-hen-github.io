@@ -273,7 +273,7 @@ stick to the body, and the inner container sticks to the outer .*/
 
     color: var(--bright-color);
     cursor: pointer;
-    padding: 1em 1em;
+    padding: 1em .5em;
     border: 0.15em solid var(--bright-color);
     border-radius: 0.45em;
     perspective: 2em;
