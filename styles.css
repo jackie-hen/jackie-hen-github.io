@@ -77,6 +77,13 @@ div.sticky {
 	margin-right: auto;
 }
 
+
+  /* making a class for small images like bios */
+  .img-small {
+    width: 50%;
+
+
+  }
 /* Sticky header */
 
 /* contains two elements: an outer and inner container. 
@@ -159,8 +166,6 @@ stick to the body, and the inner container sticks to the outer .*/
 
 
 
-
-
 /* Create four equal columns that floats next to each other, pattern for buttons, reviews and actor bios */
 .fourcolumn {
     float: left;
@@ -176,9 +181,7 @@ stick to the body, and the inner container sticks to the outer .*/
 
 
 /* create buttons */
-
   .glowing-btn {
-
     /*playing around with styles to match the other elements*/
     color: var(--bright-color);
     cursor: pointer;
@@ -350,31 +353,6 @@ background: url("img/back_to_top_after.png") no-repeat;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* making a class for small images like bios */
-  .img-small {
-    width: 50%;
-
-
-  }
-  
-
-
-
-
   /* footer design */
 
 .footer{
@@ -425,13 +403,10 @@ background: url("img/back_to_top_after.png") no-repeat;
 
 /* create image gallery image*/
 
-
-
 #image-gallery { 
   width: 500px; 
   margin: 0 auto;
 }
-
 
 #image-thumbs { 
   display: flex; 
@@ -447,23 +422,20 @@ background: url("img/back_to_top_after.png") no-repeat;
   cursor: pointer;
 }
 
-
 /* a style hover effect for the borders of images */
 .border img {
 transition: .5s ease;
 }
 
 .border img:hover{
-box-shadow: 0 0 0 6px #5fdbe6;
-transition: .5s ease;
+	-webkit-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
+      0px 0px 0.5em 0px var(--bright-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
+      0px 0px 0.5em 0px var(--bright-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
+      0px 0px 0.5em 0px var(--bright-color); 
+	transition: .5s ease;
 }
-
-
-
-
-
-
-
 
 
 
