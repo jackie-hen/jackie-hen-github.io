@@ -428,10 +428,10 @@ transition: .5s ease;
 }
 
 .border img:hover{
-	-webkit-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
+	-webkit-box-shadow: inset 0px 0px 2em 0px var(--bright-color),
       0px 0px 0.5em 0px var(--bright-color);
-    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
-      0px 0px 0.5em 0px var(--bright-color);
+    -moz-box-shadow: inset 0px 0px 2em 0px var(--bright-color),
+      0px 0px 2em 0px var(--bright-color);
     box-shadow: inset 0px 0px 2em 0px var(--bright-color),
       0px 0px 0.5em 0px var(--bright-color); 
 	transition: .5s ease;
