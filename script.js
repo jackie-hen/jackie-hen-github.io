@@ -33,3 +33,16 @@ function scrollToTop() {
 }
 
 scrollToTopBtn.addEventListener("click", scrollToTop)
+
+
+// hover logic for scroll to top button
+
+function changeImage(element) {
+    if (element.getAttribute('data-hovered') === 'true') {
+        element.querySelector('img').src = 'img/back_to_top.png';
+        element.setAttribute('data-hovered', 'false');
+    } else {
+        element.querySelector('img').src = 'img/back_to_top_after.png';
+        element.setAttribute('data-hovered', 'true');
+    }
+}
