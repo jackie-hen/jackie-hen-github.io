@@ -444,7 +444,7 @@ div.sticky {
   position: -webkit-sticky;
   width: 8%;
   position: sticky;
-  bottom: 0;
+  top: 0;
   padding: 100px;
   float: right;
 }
