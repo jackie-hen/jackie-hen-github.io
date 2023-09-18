@@ -277,6 +277,8 @@ stick to the body, and the inner container sticks to the outer .*/
     border: 0.15em solid var(--bright-color);
     border-radius: 0.45em;
     perspective: 2em;
+background: url("img/back_to_top.png") no-repeat;
+
   
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
       0px 0px 0.5em 0px var(--bright-color);
