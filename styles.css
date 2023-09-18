@@ -9,6 +9,7 @@ hr {
   width:60%;
   margin-top: 100px;
   margin-bottom: 100px;
+	float: center;
   
 
 }
@@ -47,7 +48,7 @@ div.sticky {
   position: -webkit-sticky;
   width: 8%;
   position: sticky;
-  top: 0;
+  bottom: 0;
   padding: 100px;
   float: right;
 }
