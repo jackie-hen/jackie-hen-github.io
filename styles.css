@@ -271,15 +271,12 @@ stick to the body, and the inner container sticks to the outer .*/
 
 
   #scrollToTopBtn {
-
     color: var(--bright-color);
     cursor: pointer;
-    padding: 1em .5em;
+    padding: 1em 0px;
     border: 0.15em solid var(--bright-color);
     border-radius: 0.45em;
     perspective: 2em;
-    
-background: url("img/back_to_top.png") no-repeat;
   
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
       0px 0px 0.5em 0px var(--bright-color);
@@ -289,7 +286,6 @@ background: url("img/back_to_top.png") no-repeat;
       0px 0px 0.5em 0px var(--bright-color); 
     
   }
-  
   
   
   #scrollToTopBtn::before {
@@ -326,10 +322,7 @@ background: url("img/back_to_top_after.png") no-repeat;
   #scrollToTopBtn:hover .glowing-txt {
     animation: none;
   }
-  
-
     
-  }
   
   #scrollToTopBtn:hover:before {
     filter: blur(1.5em);
