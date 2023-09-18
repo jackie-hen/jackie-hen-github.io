@@ -449,8 +449,8 @@ div.sticky {
   float: right;
 }
 
-.upper {
-  height : 50px;
+#designprocess {
+  position: absolute;
 }
 
 .copy {
