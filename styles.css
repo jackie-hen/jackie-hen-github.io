@@ -49,14 +49,6 @@ img {
   }
 
 
-div.sticky {
-  position: -webkit-sticky;
-  width: 8%;
-  position: sticky;
-  bottom: 0;
-  padding: 100px;
-  float: right;
-}
 
 
 :root {
@@ -444,7 +436,33 @@ transition: .5s ease;
 
 
 
+.container {
+  position : absolute;
+}
 
+div.sticky {
+  position: -webkit-sticky;
+  width: 8%;
+  position: sticky;
+  top: 0;
+  padding: 100px;
+  float: right;
+}
+
+.upper {
+  height : 50px;
+}
+
+.copy {
+  position : sticky;
+  top : 0px;
+}
+
+.lower {
+  height : 50px;
+  position : absolute;
+  bottom : 0px;
+}
 
 
 
