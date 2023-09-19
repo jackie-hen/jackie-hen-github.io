@@ -48,6 +48,15 @@ img {
     width: 100%;
 }
 
+div.sticky {
+  position: -webkit-sticky;
+  width: 8%;
+  position: sticky;
+  top: 0;
+  padding: 100px;
+  float: right;
+}
+
 
 
 
@@ -237,9 +246,6 @@ stick to the body, and the inner container sticks to the outer .*/
   .glowing-btn:hover:after {
     opacity: 1;
   }
-  
-
-
 
 
 
@@ -307,9 +313,6 @@ stick to the body, and the inner container sticks to the outer .*/
 
 
 
-
-
-
 /* footer */
 
 .footer{
@@ -353,9 +356,6 @@ stick to the body, and the inner container sticks to the outer .*/
 }
 
 
-
-
-
 /* image gallery */
 #image-gallery { 
   width: 500px; 
@@ -395,21 +395,6 @@ transition: .5s ease;
 
 
 
-
-
-
-div.sticky {
-  position: -webkit-sticky;
-  width: 8%;
-  position: sticky;
-  top: 0;
-  padding: 100px;
-  float: right;
-}
-
-#designprocess {
-  position: absolute;
-}
 
 
 
