@@ -1,44 +1,44 @@
 
+/* adjusting the colors, fonts, and alignments of common elements */
 body {
     background-color: black;
 }
 
-/*styling the separators */
 hr {
   clear: left;
   width:60%;
   margin-top: 100px;
   margin-bottom: 100px;
-	
-  
-
 }
 
+
+/* style video full height and width with no border */
+.videot {
+    width: 100%    !important;
+    height: 100%   !important;
+ }
 iframe{
 	border:none;
-
 }
 
-h1{
-    
+
+h1{  
     color: white;
     font-family: "Avenir";
     letter-spacing: 8px;
     line-height: 1.8;
-
 }
 
 h1.title{
   text-align: center;    
-
 }
 
 h2{
     color: white;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.8;
-
 }
+
 p {
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -46,7 +46,7 @@ p {
 
 img {
     width: 100%;
-  }
+}
 
 
 
@@ -70,22 +70,19 @@ img {
 }
 
 
-  /* making a class for small images like bios */
+/* making a class for small images like bios */
   .img-small {
     width: 50%;
-
-
   }
-/* Sticky header */
 
-/* contains two elements: an outer and inner container. 
+
+/* Sticky header - contains two elements: an outer and inner container. 
 The outer container is taller than the inner, */
 
-
-/* outer container has a negative top value equal to the height difference  between the containers. 
+/* outer container has a negative top value equal to the height difference between the containers. 
 This causes the outer container to stay in place while the inner container stays with the viewport.*/
 .header-outer {
-	/* Make it stick */
+	/* Make sticky */
 	height: var(--header-outer-height);
 	position: sticky;
 	top: calc(
@@ -93,10 +90,7 @@ This causes the outer container to stay in place while the inner container stays
 	); /* Multiply by -1 to get a negative value */
 	display: flex;
 	align-items: center;
-
-	/* Other */
 	background-color: black;
-
 }
 
 /* by using "position: sticky" on both the outer and inner container, the outer  will 
@@ -104,12 +98,10 @@ stick to the body, and the inner container sticks to the outer .*/
 
 /*the inner must be vertically centered */
 .header-inner {
-	/* Make it stick */
+	/* Make sticky */
 	height: var(--header-inner-height);
 	position: sticky;
 	top: 0;
-
-	/* Other */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -117,19 +109,8 @@ stick to the body, and the inner container sticks to the outer .*/
 
 
 
-
-
-
-/* make video full height and width */
-.videot {
-    width: 100%    !important;
-    height: 100%   !important;
- }
-
    
  /* Create two unequal columns */
-
-
 .columns {
     margin-right: 50px;
     margin-left: 50px;
@@ -152,13 +133,11 @@ stick to the body, and the inner container sticks to the outer .*/
     margin-right: 25px;
     margin-left: 25px;
     width: 50%;
-    
   }
 
 
 
-
-/* Create four equal columns that floats next to each other, pattern for buttons, reviews and actor bios */
+/* Create four equal columns that floats next to each other - pattern for buttons, reviews and actor bios */
 .fourcolumn {
     float: left;
     width: 25%;
@@ -167,14 +146,13 @@ stick to the body, and the inner container sticks to the outer .*/
   }
 .fourcolumn.first {
     clear: left;
-    
   }
   
 
 
-/* create buttons */
+/* navigation buttons */
   .glowing-btn {
-    /*playing around with styles to match the other elements*/
+    /* styles complement the other elements*/
     color: var(--bright-color);
     cursor: pointer;
     padding: 1em 1em;
@@ -194,7 +172,6 @@ stick to the body, and the inner container sticks to the outer .*/
       0px 0px 0.5em 0px var(--bright-color);
     box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
       0px 0px 0.5em 0px var(--bright-color); 
-    
   }
   
   .glowing-txt {
@@ -206,10 +183,7 @@ stick to the body, and the inner container sticks to the outer .*/
     -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
       0 0 0.45em var(--bright-color);
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--bright-color);
-    
   }
-  
-
   
   .glowing-btn::before {
     content: "";
@@ -269,7 +243,7 @@ stick to the body, and the inner container sticks to the outer .*/
 
 
 
-
+/*navigation button */
   #scrollToTopBtn {
     color: var(--bright-color);
     cursor: pointer;
@@ -277,8 +251,7 @@ stick to the body, and the inner container sticks to the outer .*/
     border: 0.15em solid var(--bright-color);
     border-radius: 0.45em;
     perspective: 2em;
-background: url("img/back_to_top.png") no-repeat;
-
+	background: url("img/back_to_top.png") no-repeat;
   
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
       0px 0px 0.5em 0px var(--bright-color);
@@ -286,9 +259,7 @@ background: url("img/back_to_top.png") no-repeat;
       0px 0px 0.5em 0px var(--bright-color);
     box-shadow: inset 0px 0px 0.5em 0px var(--bright-color),
       0px 0px 0.5em 0px var(--bright-color); 
-    
   }
-  
   
   #scrollToTopBtn::before {
     content: "";
@@ -318,14 +289,13 @@ background: url("img/back_to_top.png") no-repeat;
     text-shadow: none;
     animation: none;
 	opacity: 1;
-background: url("img/back_to_top_after.png") no-repeat;
+	background: url("img/back_to_top_after.png") no-repeat;
   }
   
   #scrollToTopBtn:hover .glowing-txt {
     animation: none;
   }
     
-  
   #scrollToTopBtn:hover:before {
     filter: blur(1.5em);
     opacity: 1;
@@ -340,7 +310,7 @@ background: url("img/back_to_top_after.png") no-repeat;
 
 
 
-  /* footer design */
+/* footer */
 
 .footer{
     clear: left;
@@ -357,14 +327,12 @@ background: url("img/back_to_top_after.png") no-repeat;
     font-family: "Avenir";
     letter-spacing: 8px;
     line-height: 1.8;
-
     font-size:1.5em;
     }
     
 
 
 /* Responsive layout codes here so you can see how it plays on different devices */
-
 
     @media only screen and (max-width: 600px) {
         .glowing-btn{
@@ -388,8 +356,7 @@ background: url("img/back_to_top_after.png") no-repeat;
 
 
 
-/* create image gallery image*/
-
+/* image gallery */
 #image-gallery { 
   width: 500px; 
   margin: 0 auto;
@@ -408,6 +375,7 @@ background: url("img/back_to_top_after.png") no-repeat;
   margin-right: 10px; 
   cursor: pointer;
 }
+
 
 /* a style hover effect for the borders of images */
 .border img {
@@ -430,11 +398,6 @@ transition: .5s ease;
 
 
 
-
-.container {
-  position : absolute;
-}
-
 div.sticky {
   position: -webkit-sticky;
   width: 8%;
@@ -447,18 +410,6 @@ div.sticky {
 #designprocess {
   position: absolute;
 }
-
-.copy {
-  position : sticky;
-  top : 0px;
-}
-
-.lower {
-  height : 50px;
-  position : absolute;
-  bottom : 0px;
-}
-
 
 
 
